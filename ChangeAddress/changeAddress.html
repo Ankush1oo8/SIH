@@ -71,7 +71,7 @@
 
     <div class="container">
       <h2>Update Address</h2>
-      <form>
+      <form id="addressForm">
         <label for="current-address">Current Address:</label>
         <textarea id="current-address" disabled>
 123 Current St, City, State, ZIP</textarea
@@ -129,6 +129,11 @@
         </button>
       </form>
     </div>
+    <div id="successMessage" class="hidden">
+      <p>Your address has been successfully updated!</p>
+    </div>
+  </div>
+
     <footer>
       <div class="footer-container">
         <div class="footer-links">
@@ -176,5 +181,27 @@
         </p>
       </div>
     </footer>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('addressForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    
+    // Show success message
+    successMessage.classList.remove('hidden');
+    
+    // Optionally, add a delay before hiding the message
+    setTimeout(function() {
+      successMessage.classList.add('hidden');
+    }, 3000); // Hide after 3 seconds
+      
+    // Submit the form programmatically
+    form.submit();
+  });
+});
+
+    </script>
   </body>
 </html>
