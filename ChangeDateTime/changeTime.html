@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Delivery Time</title>
+    <link rel="stylesheet" href="changeTime.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-item">
+        <div class="nav-right">
+          <a href=""
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/user-circle.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <a
+                href="https://www.indiapost.gov.in/VAS/Pages/IndiaPosthome.aspx#maincontent"
+              >
+                <img
+                  src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/skipToMainContent.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/increaseFontSize.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/accessible-icon.png"
+                alt=""
+              />
+            </li>
+            <li>Hindi</li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/siteMap.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/searchIcon.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="post-logo">
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/India_Post_Logo_With_Text.svg"
+        alt="Indian-post-Logo"
+      />
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Emblem_of_India.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="container">
+      <h1>Change Delivery Time</h1>
+      <form id="change-time-form">
+        <label for="order-number">Order Number:</label>
+        <input type="text" id="order-number" name="order-number" required />
+
+        <label for="change-del-date">Current Delivery Date:</label>
+        <input
+          type="date"
+          id="current-delivery-time"
+          name="change-del-date"
+          required
+        />
+
+        <div class="time-slots">
+          <h3>Available Time Slots</h3>
+          <select id="timeSlotSelect">
+            <option value="8-10am">8-10 AM</option>
+            <option value="10-12pm">10-12 PM</option>
+            <option value="12-2pm">12-2 PM</option>
+            <option value="2-4pm">2-4 PM</option>
+            <option value="4-6pm">4-6 PM</option>
+          </select>
+        </div>
+
+        <button>
+          <a href="../customer_page/customer.html">Change Delivery Time</a>
+        </button>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/pages/Department-of-Posts-Govt-of-india/1577722879122378?ref=hl"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/faceBookicon_new.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.twitter.com/indiapostoffice"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/twitterImage_new.png"
+              alt="Twitter"
+          /></a>
+          <a href="https://www.youtube.com/indiapost_dop"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/youtubeicon_new.png"
+              alt="YouTube"
+          /></a>
+          <a href="https://www.instagram.com/indiapost_dop/"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/instagramicon_new.png"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Department of Posts, Ministry of Communications,
+          Government of India. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

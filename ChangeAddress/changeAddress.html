@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Address</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-item">
+        <div class="nav-right">
+          <a href=""
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/user-circle.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <a
+                href="https://www.indiapost.gov.in/VAS/Pages/IndiaPosthome.aspx#maincontent"
+              >
+                <img
+                  src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/skipToMainContent.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/increaseFontSize.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/accessible-icon.png"
+                alt=""
+              />
+            </li>
+            <li>Hindi</li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/siteMap.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/searchIcon.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="post-logo">
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/India_Post_Logo_With_Text.svg"
+        alt="Indian-post-Logo"
+      />
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Emblem_of_India.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="container">
+      <h2>Update Address</h2>
+      <form action="/update-address" method="POST">
+        <label for="current-address">Current Address:</label>
+        <textarea id="current-address" disabled>
+123 Current St, City, State, ZIP</textarea
+        >
+
+        <label for="street">New Street:</label>
+        <input type="text" id="street" name="street" required />
+
+        <label for="city">New City:</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="state">New State:</label>
+        <input type="text" id="state" name="state" required />
+
+        <label for="zip">New ZIP Code:</label>
+        <input type="text" id="zip" name="zip" required />
+
+        <div class="container-day">
+          <p style="font-size: 18px; font-weight: bold">
+            When is this address open for deliveries?
+          </p>
+          <div class="day-select">
+            <input type="checkbox" checked />
+            <label for="Monday">Monday</label><br />
+          </div>
+          <div class="day-select">
+            <input type="checkbox" checked />
+            <label for="Tuesday">Tuesday</label><br />
+          </div>
+          <div class="day-select">
+            <input type="checkbox" checked />
+            <label for="Wednesday">Wednesday</label><br />
+          </div>
+          <div class="day-select">
+            <input type="checkbox" checked />
+            <label for="Thursday">Thursday</label><br />
+          </div>
+          <div class="day-select">
+            <input type="checkbox" checked /> <label for="Friday">Friday</label
+            ><br />
+          </div>
+
+          <div class="day-select">
+            <input type="checkbox" /> <label for="Saturday">Saturday</label
+            ><br />
+          </div>
+
+          <div class="day-select">
+            <input type="checkbox" /> <label for="Sunday">Sunday</label><br />
+          </div>
+        </div>
+
+        <button type="submit">
+          <a href="../customer_page/customer.html">Update Address</a>
+        </button>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/pages/Department-of-Posts-Govt-of-india/1577722879122378?ref=hl"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/faceBookicon_new.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.twitter.com/indiapostoffice"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/twitterImage_new.png"
+              alt="Twitter"
+          /></a>
+          <a href="https://www.youtube.com/indiapost_dop"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/youtubeicon_new.png"
+              alt="YouTube"
+          /></a>
+          <a href="https://www.instagram.com/indiapost_dop/"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/instagramicon_new.png"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Department of Posts, Ministry of Communications,
+          Government of India. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

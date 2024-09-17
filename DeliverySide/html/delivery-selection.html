@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Delivery Slot</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .delivery-list {
+        list-style: none;
+        padding: 0;
+      }
+      .delivery-list li {
+        margin: 10px 0;
+        text-align: center;
+      }
+      .delivery-list a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+      .delivery-list a:hover {
+        text-decoration: underline;
+      }
+
+      .nav-bar {
+        background-color: white; /* Light gray background */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #dfd8d8; /* Bottom border */
+      }
+
+      .nav-item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .nav-right a img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+
+      .nav-left ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-left ul li {
+        margin: 0 10px;
+      }
+
+      .nav-left ul li img {
+        width: 15px;
+        height: 15px;
+      }
+
+      .nav-left ul li a img {
+        width: 15px;
+        height: 15px;
+      }
+
+      .nav-left ul li {
+        cursor: pointer;
+        font-size: 15px;
+        color: #333;
+        font-weight: bold;
+      }
+      .post-logo img {
+        height: 150px;
+        padding-bottom: 5px;
+      }
+      .post-logo {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+      }
+
+      .nav-left ul li:hover {
+        color: #ff000096; /* Change color on hover */
+      }
+
+      .nav-right a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-item">
+        <div class="nav-right">
+          <a href=""
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/user-circle.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <a
+                href="https://www.indiapost.gov.in/VAS/Pages/IndiaPosthome.aspx#maincontent"
+              >
+                <img
+                  src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/skipToMainContent.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/increaseFontSize.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/accessible-icon.png"
+                alt=""
+              />
+            </li>
+            <li>Hindi</li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/siteMap.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/searchIcon.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="post-logo">
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/India_Post_Logo_With_Text.svg"
+        alt="Indian-post-Logo"
+      />
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Emblem_of_India.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="container">
+      <h1>Select Delivery Slot</h1>
+      <ul id="delivery-list" class="delivery-list">
+        <!-- List will be dynamically populated by JavaScript -->
+      </ul>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/pages/Department-of-Posts-Govt-of-india/1577722879122378?ref=hl"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/faceBookicon_new.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.twitter.com/indiapostoffice"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/twitterImage_new.png"
+              alt="Twitter"
+          /></a>
+          <a href="https://www.youtube.com/indiapost_dop"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/youtubeicon_new.png"
+              alt="YouTube"
+          /></a>
+          <a href="https://www.instagram.com/indiapost_dop/"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/instagramicon_new.png"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Department of Posts, Ministry of Communications,
+          Government of India. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Define deliveries with location and time slot
+      const deliveries = [
+        { id: 1, location: "Solapur", timeSlot: "09:00 AM - 10:00 AM" },
+        { id: 2, location: "Solapur", timeSlot: "10:00 AM - 11:00 AM" },
+        { id: 3, location: "Solapur", timeSlot: "11:00 AM - 12:00 PM" },
+        { id: 4, location: "Solapur", timeSlot: "12:00 PM - 01:00 PM" },
+        { id: 5, location: "Solapur", timeSlot: "01:00 PM - 02:00 PM" },
+        { id: 6, location: "Solapur", timeSlot: "02:00 PM - 03:00 PM" },
+        { id: 7, location: "Solapur", timeSlot: "03:00 PM - 04:00 PM" },
+        { id: 8, location: "Solapur", timeSlot: "04:00 PM - 05:00 PM" },
+        { id: 9, location: "Solapur", timeSlot: "05:00 PM - 06:00 PM" },
+        { id: 10, location: "Solapur", timeSlot: "06:00 PM - 07:00 PM" },
+      ];
+
+      // Sort deliveries by time slot in ascending order
+      deliveries.sort((a, b) => {
+        const timeToValue = (time) => {
+          const [hour, minute] = time.split(":").map(Number);
+          return hour * 60 + minute;
+        };
+
+        const timeSlotToValue = (timeSlot) => {
+          const [startTime] = timeSlot.split(" - ")[0].split(" ");
+          return timeToValue(startTime);
+        };
+
+        return timeSlotToValue(a.timeSlot) - timeSlotToValue(b.timeSlot);
+      });
+
+      // Populate the list
+      const listElement = document.getElementById("delivery-list");
+      deliveries.forEach((delivery) => {
+        const listItem = document.createElement("li");
+        listItem.innerHTML = `<a href="../html/delivery-details.html?location=${delivery.location.toLowerCase()}&timeSlot=${encodeURIComponent(
+          delivery.timeSlot
+        )}">
+                    Delivery ${delivery.id}: ${delivery.location}, ${
+          delivery.timeSlot
+        }
+                </a>`;
+        listElement.appendChild(listItem);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Details</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="nav-item">
+        <div class="nav-right">
+          <a href=""
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/user-circle.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <a
+                href="https://www.indiapost.gov.in/VAS/Pages/IndiaPosthome.aspx#maincontent"
+              >
+                <img
+                  src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/skipToMainContent.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/increaseFontSize.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/accessible-icon.png"
+                alt=""
+              />
+            </li>
+            <li>Hindi</li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/siteMap.png"
+                alt=""
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/searchIcon.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="post-logo">
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/India_Post_Logo_With_Text.svg"
+        alt="Indian-post-Logo"
+      />
+      <img
+        src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Emblem_of_India.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="container">
+      <div class="sidebar">
+        <h2>Delivery Details</h2>
+        <div class="location">
+          <h3>Delivery Location</h3>
+          <p id="location">Solapur</p>
+          <!-- Static location -->
+        </div>
+        <div class="time-slots">
+          <h3>Scheduled Time Slot</h3>
+          <p id="timeSlot">09:00 AM - 10:00 AM</p>
+          <!-- Static time slot -->
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/pages/Department-of-Posts-Govt-of-india/1577722879122378?ref=hl"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/faceBookicon_new.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://www.twitter.com/indiapostoffice"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/twitterImage_new.png"
+              alt="Twitter"
+          /></a>
+          <a href="https://www.youtube.com/indiapost_dop"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/youtubeicon_new.png"
+              alt="YouTube"
+          /></a>
+          <a href="https://www.instagram.com/indiapost_dop/"
+            ><img
+              src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/instagramicon_new.png"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Department of Posts, Ministry of Communications,
+          Government of India. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+      // Define a constant location and coordinates
+      const coordinates = [17.6599, 75.9064]; // Coordinates for Solapur
+
+      // Initialize the map
+      const map = L.map("map").setView(coordinates, 13);
+
+      // Load the base map tiles
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      // Add a marker for the delivery location
+      L.marker(coordinates).addTo(map);
+    </script>
+  </body>
+</html>
